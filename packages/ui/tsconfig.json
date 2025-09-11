@@ -1,0 +1,10 @@
+{
+  "extends": "@wani-works/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "exclude": ["dist", "build", "node_modules"]
+}

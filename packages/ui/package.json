@@ -1,0 +1,28 @@
+{
+  "name": "@wani-works/ui",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "exports": {},
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@wani-works/eslint-config": "workspace:^",
+    "@wani-works/prettier-config": "workspace:^",
+    "@wani-works/typescript-config": "workspace:^",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "typescript": "^5.9.2"
+  }
+}
