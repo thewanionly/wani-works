@@ -1,3 +1,3 @@
-# `@turbo/eslint-config`
+# `@wani-works/eslint-config`
 
 Collection of internal eslint configurations.
