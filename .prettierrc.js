@@ -1,3 +1,3 @@
 module.exports = {
-  ...require("./packages/prettier-config/base").default,
+  ...require('./packages/prettier-config/base').default,
 };

@@ -1,4 +1,4 @@
-import { config } from "@wani-works/eslint-config/react-internal";
+import { config } from '@wani-works/eslint-config/react-internal';
 
 /** @type {import("eslint").Linter.Config} */
 export default config;
