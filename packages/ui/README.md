@@ -16,6 +16,7 @@ A modern, reusable React UI component library built with TypeScript, Tailwind CS
 This package is part of the Wani Works monorepo and is not published to npm. To use it in your project:
 
 1. Add it as a dependency in your `package.json`:
+
    ```json
    {
      "dependencies": {
@@ -25,13 +26,15 @@ This package is part of the Wani Works monorepo and is not published to npm. To 
    ```
 
 2. Import the CSS styles in your application:
+
    ```tsx
    import '@wani-works/ui/styles';
    ```
 
 3. Import and use components:
+
    ```tsx
-   import { Button, ButtonVariant, ButtonSize } from '@wani-works/ui/button';
+   import { Button, ButtonSize, ButtonVariant } from '@wani-works/ui/button';
 
    function MyComponent() {
      return (
@@ -70,6 +73,7 @@ pnpm dev
 ```
 
 The development mode will:
+
 - Watch TypeScript files and compile them
 - Watch CSS files and rebuild Tailwind styles
 - Output compiled files to the `dist/` directory
@@ -86,6 +90,7 @@ pnpm build
 ```
 
 This will:
+
 - Compile TypeScript files
 - Build and minify CSS styles
 - Output everything to the `dist/` directory
