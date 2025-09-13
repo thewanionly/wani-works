@@ -5,17 +5,21 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
+    "dev": "concurrently \"pnpm dev:tsc\" \"pnpm dev:css\"",
+    "dev:tsc": "tsc --watch",
+    "dev:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css --watch",
+    "build": "pnpm build:tsc && pnpm build:css",
+    "build:tsc": "tsc",
+    "build:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css --minify",
     "lint": "eslint .",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write ."
   },
   "exports": {
-    "./button": "./src/components/Button/index.ts"
+    "./button": "./src/components/Button/index.ts",
+    "./styles": "./dist/styles.css"
   },
   "dependencies": {
-    "@wani-works/tailwind-config": "workspace:^",
     "clsx": "^2.1.1",
     "lucide-react": "^0.544.0",
     "react": "^19.1.1",
@@ -28,8 +32,10 @@
     "@types/react-dom": "^19.1.9",
     "@wani-works/eslint-config": "workspace:^",
     "@wani-works/prettier-config": "workspace:^",
+    "@wani-works/tailwind-config": "workspace:^",
     "@wani-works/typescript-config": "workspace:^",
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "postcss": "^8.5.6",

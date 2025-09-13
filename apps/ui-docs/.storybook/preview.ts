@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react-vite';
+import '@wani-works/ui/styles';
 
 const preview: Preview = {
   parameters: {
