@@ -12,7 +12,7 @@
     "format:fix": "prettier --write ."
   },
   "exports": {
-    "./button": "./src/components/Button"
+    "./button": "./src/components/Button/index.ts"
   },
   "dependencies": {
     "@wani-works/tailwind-config": "workspace:^",
