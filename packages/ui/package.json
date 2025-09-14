@@ -16,6 +16,7 @@
     "format:fix": "prettier --write ."
   },
   "exports": {
+    "./badge": "./src/components/Badge/index.ts",
     "./button": "./src/components/Button/index.ts",
     "./styles": "./dist/styles.css"
   },
