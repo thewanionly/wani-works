@@ -33,6 +33,7 @@
     "@vitest/coverage-v8": "^3.2.4",
     "@wani-works/prettier-config": "workspace:^",
     "@wani-works/tailwind-config": "workspace:*",
+    "@wani-works/typescript-config": "workspace:*",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
