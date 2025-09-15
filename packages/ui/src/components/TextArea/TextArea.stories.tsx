@@ -1,5 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { TextArea, type TextAreaProps } from '@wani-works/ui/textarea';
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { TextArea, type TextAreaProps } from './TextArea.tsx';
 
 const meta = {
   title: 'Design System/Components/TextArea',

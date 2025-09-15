@@ -1,10 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import {
-  Badge,
-  type BadgeProps,
-  BadgeSize,
-  BadgeVariant,
-} from '@wani-works/ui/badge';
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { Badge, type BadgeProps, BadgeSize, BadgeVariant } from './Badge.tsx';
 
 const meta = {
   title: 'Design System/Components/Badge',

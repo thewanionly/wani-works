@@ -1,12 +1,13 @@
 import { Star } from 'lucide-react';
 
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react';
+
 import {
   Button,
   type ButtonProps,
   ButtonSize,
   ButtonVariant,
-} from '@wani-works/ui/button';
+} from './Button.tsx';
 
 const meta = {
   title: 'Design System/Components/Button',

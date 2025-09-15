@@ -1,7 +1,8 @@
 import { Mail } from 'lucide-react';
 
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Input, type InputProps } from '@wani-works/ui/input';
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { Input, type InputProps } from './Input.tsx';
 
 const meta = {
   title: 'Design System/Components/Input',
