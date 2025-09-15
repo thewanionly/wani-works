@@ -18,7 +18,9 @@
   "exports": {
     "./badge": "./src/components/Badge/index.ts",
     "./button": "./src/components/Button/index.ts",
-    "./styles": "./dist/styles.css"
+    "./input": "./src/components/Input/index.ts",
+    "./styles": "./dist/styles.css",
+    "./textarea": "./src/components/TextArea/index.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
