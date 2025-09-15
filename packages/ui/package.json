@@ -13,7 +13,10 @@
     "build:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css --minify",
     "lint": "eslint .",
     "format:check": "prettier --check .",
-    "format:fix": "prettier --write ."
+    "format:fix": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "exports": {
     "./badge": "./src/components/Badge/index.ts",
@@ -30,7 +33,13 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@wani-works/jest-config": "workspace:^",
+    "@types/jest": "^29.5.12",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "jest": "^29.7.0",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@wani-works/eslint-config": "workspace:^",
@@ -41,9 +50,11 @@
     "concurrently": "^9.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
+    "ts-jest": "^29.2.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.9.2"
   }
