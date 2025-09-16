@@ -7,7 +7,14 @@ const config = {
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   transform: {
-    '^.+\\.(t|j)sx?$': 'ts-jest'
+    '^.+\\.(t|j)sx?$': [
+      'ts-jest',
+      {
+        tsconfig: {
+          module: 'CommonJS'
+        },
+      }
+    ]
   },
   collectCoverageFrom: [
     '<rootDir>/**/*.{ts,tsx,js,jsx}',
