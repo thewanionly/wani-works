@@ -1,10 +1,13 @@
 /** @type {import('jest').Config} */
 const config = {
   testEnvironment: 'node',
-  testMatch: ['**/__tests__/**/*.(spec|test).[jt]s?(x)'],
+  testMatch: [
+    '**/__tests__/**/*.(spec|test).[jt]s?(x)',
+    '**/?(*.)+(spec|test).[jt]s?(x)'
+  ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   transform: {
-    '^.+\\.(t|j)sx?$': ['ts-jest', { tsconfig: true, useESM: true }]
+    '^.+\\.(t|j)sx?$': 'ts-jest'
   },
   collectCoverageFrom: [
     '<rootDir>/**/*.{ts,tsx,js,jsx}',

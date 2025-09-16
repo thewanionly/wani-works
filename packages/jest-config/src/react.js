@@ -8,7 +8,7 @@ const config = {
   moduleNameMapper: {
     ...base.moduleNameMapper,
     '\\.(css|less|sass|scss)$': '@wani-works/jest-config/mocks/style',
-    '\\.(jpg|jpeg|png|gif|webp|avif|svg)$': '@wani-works/jest-config/mocks/file',
+    '\\.(jpg|jpeg|png|gif|webp|avif|svg)$': '@wani-works/jest-config/mocks/file'
   },
 };
 
