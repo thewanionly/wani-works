@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "@wani-works/typescript-config": "workspace:^",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.1.13"
   }
 }
