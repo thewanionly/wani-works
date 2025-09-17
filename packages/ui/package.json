@@ -15,7 +15,7 @@
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watch --verbose",
     "test:coverage": "jest --coverage"
   },
   "exports": {
