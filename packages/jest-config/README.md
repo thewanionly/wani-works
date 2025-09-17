@@ -14,6 +14,7 @@ Create `jest.config.js` in your project:
 
 ```js
 import config from '@wani-works/jest-config/base';
+
 export default config;
 ```
 
@@ -21,6 +22,7 @@ For React/web projects:
 
 ```js
 import config from '@wani-works/jest-config/react';
+
 export default config;
 ```
 
@@ -28,6 +30,7 @@ For Node-only projects:
 
 ```js
 import config from '@wani-works/jest-config/node';
+
 export default config;
 ```
 

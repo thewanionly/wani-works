@@ -3,21 +3,19 @@ const config = {
   testEnvironment: 'node',
   testMatch: [
     '**/__tests__/**/*.(spec|test).[jt]s?(x)',
-    '**/?(*.)+(spec|test).[jt]s?(x)'
+    '**/?(*.)+(spec|test).[jt]s?(x)',
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   transform: {
-    '^.+\\.(t|j)sx?$': 'ts-jest'
+    '^.+\\.(t|j)sx?$': 'ts-jest',
   },
   collectCoverageFrom: [
     '<rootDir>/**/*.{ts,tsx,js,jsx}',
     '!<rootDir>/**/node_modules/**',
     '!<rootDir>/**/dist/**',
-    '!<rootDir>/**/build/**'
+    '!<rootDir>/**/build/**',
   ],
   moduleNameMapper: {},
 };
 
 export default config;
-
-
