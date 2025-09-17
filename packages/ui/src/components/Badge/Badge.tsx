@@ -17,9 +17,9 @@ export enum BadgeVariant {
 }
 
 const BADGE_SIZE_MAP = {
-  [BadgeSize.Small]: 'h-5 text-xs leading-4 py-px px-[0.3125rem]',
-  [BadgeSize.Medium]: 'h-6 text-sm leading-5 py-px px-[0.4375rem]',
-  [BadgeSize.Large]: 'h-7 text-sm leading-5 py-[0.1875rem] px-[0.5625rem]',
+  [BadgeSize.Small]: 'h-5 text-xs leading-4 py-px px-1.25',
+  [BadgeSize.Medium]: 'h-6 text-sm leading-5 py-px px-1.75',
+  [BadgeSize.Large]: 'h-7 text-sm leading-5 py-0.75 px-2.25',
 };
 
 const BADGE_VARIANT_MAP = {
