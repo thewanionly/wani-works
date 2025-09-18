@@ -90,7 +90,6 @@ This documentation app includes several Storybook addons:
 ## Related Packages
 
 - `@wani-works/ui` - The main UI component library
-- `@wani-works/tailwind-config` - Shared Tailwind CSS configuration
 
 ## Contributing
 
