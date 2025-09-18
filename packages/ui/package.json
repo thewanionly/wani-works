@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "concurrently \"pnpm dev:tsc\" \"pnpm dev:css\"",
     "dev:tsc": "tsc --watch",
-    "dev:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css --watch",
+    "dev:css": "npx @tailwindcss/cli -i ./src/styles/global.css -o ./dist/styles.css --watch",
     "build": "pnpm build:tsc && pnpm build:css",
     "build:tsc": "tsc",
-    "build:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css --minify",
+    "build:css": "npx @tailwindcss/cli -i ./src/styles/global.css -o ./dist/styles.css --minify",
     "lint": "eslint .",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@storybook/react": "^9.1.6",
+    "@tailwindcss/cli": "^4.1.13",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.6.1",
@@ -44,7 +45,6 @@
     "@wani-works/eslint-config": "workspace:^",
     "@wani-works/jest-config": "workspace:^",
     "@wani-works/prettier-config": "workspace:^",
-    "@wani-works/tailwind-config": "workspace:^",
     "@wani-works/typescript-config": "workspace:^",
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.1.0",
