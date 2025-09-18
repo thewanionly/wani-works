@@ -49,13 +49,13 @@ const BUTTON_VARIANT_MAP = {
   [ButtonVariant.LinkColor]: `
     rounded-none bg-transparent p-0 text-indigo-700
     hover:text-indigo-800
-    focus:text-indigo-800 focus:rounded-sm focus:outline-hidden focus:shadow-button-focus-ring
+    focus:text-indigo-800 focus:rounded-xs focus:outline-hidden focus:shadow-button-focus-ring
     disabled:bg-transparent disabled:text-neutral-400 disabled:shadow-none
   `,
   [ButtonVariant.LinkGray]: `
     rounded-none bg-transparent p-0 text-neutral-600
     hover:text-neutral-900
-    focus:text-neutral-900 focus:rounded-sm focus:outline-hidden focus:shadow-button-focus-ring
+    focus:text-neutral-900 focus:rounded-xs focus:outline-hidden focus:shadow-button-focus-ring
     disabled:bg-transparent disabled:text-neutral-400 disabled:shadow-none
   `,
   [ButtonVariant.Destructive]: `
@@ -96,7 +96,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       ref={ref}
       type="button"
       className={cn(
-        'flex items-center gap-1 rounded-sm font-medium motion-safe:transition-colors',
+        'flex items-center gap-1 rounded-xs font-medium motion-safe:transition-colors',
         iconOnly ? ICON_BUTTON_SIZE_MAP[size] : BUTTON_SIZE_MAP[size],
         BUTTON_VARIANT_MAP[variant],
         className

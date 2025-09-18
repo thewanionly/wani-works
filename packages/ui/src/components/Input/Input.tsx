@@ -41,7 +41,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         )}
         <div
           className={cn(
-            'flex w-full items-center justify-between gap-2 rounded-sm border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 motion-safe:transition-colors',
+            'flex w-full items-center justify-between gap-2 rounded-xs border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 motion-safe:transition-colors',
             'focus-within:border-indigo-700 focus-within:shadow-button-focus-ring',
             disabled && 'border-neutral-100',
             errorMessage &&
