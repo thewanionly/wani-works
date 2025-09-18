@@ -1,14 +1,20 @@
 import type { Config } from 'tailwindcss';
 
-import sharedConfig from '@wani-works/tailwind-config';
-
-const config: Pick<Config, 'content' | 'presets'> = {
+const config: Config = {
   content: [
     './index.html',
     './src/**/*.{ts,tsx,html,stories.tsx}',
     '../../packages/ui/src/**/*.{ts,tsx}',
   ],
-  presets: [sharedConfig],
+  theme: {
+    extend: {
+      boxShadow: {
+        buttonFocusRing: '0px 0px 0px 4px rgb(68 76 231 / 0.12)',
+        destructiveBtnFocusRing: '0px 0px 0px 4px rgb(217 45 32 / 0.12)',
+      },
+    },
+  },
+  plugins: [],
 };
 
 export default config;
