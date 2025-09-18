@@ -41,11 +41,11 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         )}
         <div
           className={cn(
-            'flex w-full items-center justify-between gap-2 rounded border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 motion-safe:transition-colors',
-            'focus-within:border-indigo-700 focus-within:shadow-buttonFocusRing',
+            'flex w-full items-center justify-between gap-2 rounded-sm border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 motion-safe:transition-colors',
+            'focus-within:border-indigo-700 focus-within:shadow-button-focus-ring',
             disabled && 'border-neutral-100',
             errorMessage &&
-              'focus-within:border-red-600 focus-within:shadow-destructiveBtnFocusRing'
+              'focus-within:border-red-600 focus-within:shadow-destructive-btn-focus-ring'
           )}
         >
           {leadingIcon}
@@ -53,7 +53,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             ref={ref}
             id={id}
             className={cn(
-              'flex-1 bg-neutral-50 text-neutral-900 placeholder:text-neutral-500 focus:outline-none',
+              'flex-1 bg-neutral-50 text-neutral-900 placeholder:text-neutral-500 focus:outline-hidden',
               'disabled:text-neutral-500 disabled:placeholder:text-neutral-400'
             )}
             disabled={disabled}

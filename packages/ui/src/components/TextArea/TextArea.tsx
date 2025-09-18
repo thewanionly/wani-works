@@ -80,10 +80,10 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
             'h-[108px] resize-none rounded-lg border border-neutral-200 bg-neutral-50 px-3.5 py-3 motion-safe:transition-colors',
             'text-sm font-normal text-neutral-900',
             'placeholder:text-neutral-500',
-            'focus:border-indigo-700 focus:shadow-buttonFocusRing focus:outline-none',
+            'focus:border-indigo-700 focus:shadow-button-focus-ring focus:outline-hidden',
             'disabled:border-neutral-100 disabled:text-neutral-500 disabled:placeholder:text-neutral-400',
             errorText &&
-              'border-red-300 focus:border-red-600 focus:shadow-destructiveBtnFocusRing'
+              'border-red-300 focus:border-red-600 focus:shadow-destructive-btn-focus-ring'
           )}
           id={id}
           disabled={disabled}
