@@ -1,5 +1,5 @@
 {
   "buildCommand": "turbo build --filter=ui-docs...",
-  "outputDirectory": "apps/ui-docs/storybook-static",
+  "outputDirectory": "output-test",
   "installCommand": "pnpm install"
 }
