@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chat AI
+
+An interactive chat interface built with Next.js that allows users to send messages and receive responses from an AI model.
+
+## Features
+
+- 🤖 AI-powered chat interface
+- ⚡ Built with Next.js 15 and React 19
+- 🎨 Modern UI with Tailwind CSS v4
+- 📱 Responsive design
+- 🔧 TypeScript for type safety
+
+## Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
+- **Runtime**: [React 19](https://react.dev/)
+- **Language**: [TypeScript 5](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Fonts**: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans)
+- **Linting**: [ESLint](https://eslint.org/) with Next.js config
+- **Package Manager**: [pnpm](https://pnpm.io/)
+
+## Prerequisites
+
+- Node.js >= 18
+- pnpm 9.0.0 (recommended package manager)
 
 ## Getting Started
 
-First, run the development server:
+This project is part of a monorepo managed with [Turbo](https://turbo.build/). You can run it in two ways:
+
+### Option 1: From the monorepo root (Recommended)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies for all packages
+pnpm install
+
+# Run the chat-ai app in development mode
+pnpm dev --filter=chat-ai
+
+# Or run all apps in the monorepo
 pnpm dev
-# or
-bun dev
+```
+
+### Option 2: From the app directory
+
+```bash
+# Navigate to the app directory
+cd apps/chat-ai
+
+# Install dependencies
+pnpm install
+
+# Run the development server
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Available Scripts
 
-## Learn More
+- `pnpm dev` - Start the development server with Turbopack
+- `pnpm build` - Build the application for production with Turbopack
+- `pnpm start` - Start the production server
+- `pnpm lint` - Run ESLint for code quality checks
 
-To learn more about Next.js, take a look at the following resources:
+## Building for Production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Build the application
+pnpm build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Start the production server
+pnpm start
+```
