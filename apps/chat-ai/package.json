@@ -23,6 +23,7 @@
     "@tailwindcss/postcss": "^4",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@wani-works/prettier-config": "workspace:^",
+    "@wani-works/typescript-config": "workspace:*",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "prettier-plugin-tailwindcss": "^0.6.14",

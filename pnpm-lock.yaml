@@ -51,6 +51,9 @@ importers:
       '@wani-works/prettier-config':
         specifier: workspace:^
         version: link:../../packages/prettier-config
+      '@wani-works/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       eslint:
         specifier: ^9
         version: 9.34.0(jiti@2.5.1)
