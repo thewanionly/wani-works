@@ -20,8 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${notoSans.variable} antialiased`}>{children}</body>
+    <html lang="en" className="dark">
+      <body
+        className={`${notoSans.variable} font-primary bg-background text-foreground antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

@@ -2,27 +2,26 @@
 
 @import '@wani-works/ui/styles';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: var(--color-indigo-700);
+
+  --color-surface: var(--color-white);
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
 }
 
-/* Custom Tailwind variables. This will map to tailwind classes i.e. to use --font-primary, use `font-primary` tailwind class */
+/* TODO: add dark mode */
+/* .dark {
+  --color-surface: var(--color-white);
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
+} */
+
+/* Custom Tailwind CSS variables. This will map to tailwind classes i.e. to use --font-primary, use `font-primary` tailwind class */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-text-primary);
   --font-primary: var(--font-noto-sans), sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  @apply font-primary;
 }
