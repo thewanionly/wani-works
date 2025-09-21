@@ -31,6 +31,7 @@
     "@vitejs/plugin-react": "^5.0.0",
     "@vitest/browser": "^3.2.4",
     "@vitest/coverage-v8": "^3.2.4",
+    "@wani-works/eslint-config": "workspace:^",
     "@wani-works/prettier-config": "workspace:^",
     "@wani-works/typescript-config": "workspace:*",
     "eslint": "^9.33.0",

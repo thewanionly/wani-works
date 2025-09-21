@@ -22,6 +22,7 @@
     "@types/react-dom": "^19",
     "@tailwindcss/postcss": "^4",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@wani-works/eslint-config": "workspace:^",
     "@wani-works/prettier-config": "workspace:^",
     "@wani-works/typescript-config": "workspace:*",
     "eslint": "^9",
