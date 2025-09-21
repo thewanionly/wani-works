@@ -1,3 +1,10 @@
+import { Button } from '@wani-works/ui/button';
+
 export default function Home() {
-  return <h1>Chat AI</h1>;
+  return (
+    <div>
+      <h1>Chat AI</h1>
+      <Button>Send</Button>
+    </div>
+  );
 }
