@@ -8,13 +8,16 @@ This monorepo includes the following packages/apps:
 
 ### Apps
 
-- `ui-docs`: A Storybook app documenting the UI components in `pacakges/ui`
+- `ui-docs`: A Storybook app documenting the UI components in `packages/ui`
+- `chat-ai`: An interactive chat interface built with Next.js that allows users to send messages and receive responses from an AI model
 
 ### Packages
 
-- `@wani-works/ui`: A React UI component library or design system used in the applications
-- `@wani-works/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@wani-works/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@wani-works/ui`: A React UI component library with reusable components and shared styles used in the applications
+- `@wani-works/eslint-config`: ESLint configurations for base, Next.js, and React internal projects
+- `@wani-works/typescript-config`: TypeScript configurations used throughout the monorepo
+- `@wani-works/jest-config`: Jest testing configurations for base, React, and Node.js projects
+- `@wani-works/prettier-config`: Prettier configuration with import sorting and Tailwind CSS plugin support
 
 ## Build
 
@@ -27,7 +30,7 @@ turbo build
 You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
 
 ```bash
-turbo build --filter=ui-docs
+turbo build --filter=chat-ai
 ```
 
 ## Develop
@@ -41,7 +44,7 @@ turbo dev
 You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
 
 ```bash
-turbo dev --filter=ui-docs
+turbo dev --filter=chat-ai
 ```
 
 or by going to the specific package directory and running their own `dev` command:

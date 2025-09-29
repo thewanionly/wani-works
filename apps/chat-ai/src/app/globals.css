@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+@import '@wani-works/ui/styles';
+
+/* Custom Tailwind CSS variables. This will map to tailwind classes i.e. to use --font-primary, use `font-primary` tailwind class */
+@theme inline {
+  --font-primary: var(--font-noto-sans), sans-serif;
+}
